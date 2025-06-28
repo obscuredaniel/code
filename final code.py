@@ -1,11 +1,14 @@
 # Predefined subjects
-subjects = ["Math", "English", "Science"]
+subjects = ["Math", "English", "Science", "History", "Geography"]
 
 # Empty dictionary to store all results
 results = {}
 
 # Ask how many students to enter
 num_students = int(input("How many students do you want to enter? "))
+while num_students <= 0:
+    print("Please enter a valid number of students (greater than 0).")
+    num_students = int(input("How many students do you want to enter? "))
 
 # Collect input for each student
 for _ in range(num_students):
