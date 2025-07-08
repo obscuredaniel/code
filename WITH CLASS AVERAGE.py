@@ -22,7 +22,7 @@ for _ in range(num_students):
             break  # Valid ID entered
 
     # Collect remaining student info after valid ID
-    name = input("Enter student name: ").strip().title()
+    name = input("Enter student full name: ").strip().title()
     scores = {}
 
     for subject in subjects:
